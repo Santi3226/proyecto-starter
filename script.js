@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
       document.querySelector('#Usertel').innerHTML = tel;
     }
   });
-
+  
   document.querySelector('#ApiBtn')?.addEventListener('click', getUser);
 });
 
@@ -53,6 +53,8 @@ function getUser() {
         //transformar la data en respuesta y mostrarla
         const username = response.results[0].name;
         const usermail = response.results[0].email;
+        const userimg = response.results[0].picture.large;
+        document.querySelector('#userimg').src = userimg;
         document.querySelector(
           '#username'
         ).innerHTML = `${username.title}. ${username.first} ${username.last}, ${usermail}`;

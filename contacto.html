@@ -1,79 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link class="Favicon" rel="icon" href="assets/Favicon.png" />
-    <script src="script.js"></script>
-    <title>Web de Practica</title>
-  </head>
-  <body>
-    <div class="Container">
-      <div class="ContainerIzquierdo">
-        <div class="Menu"><a class="MenuHome" href="index.html"> Home </a></div>
-        <div class="Menu"><a class="MenuHome" href="bio.html"> Bio </a></div>
-        <div class="Menu">
-          <a class="MenuHome" href="contacto.html"> Contacto </a>
-        </div>
-        <div class="Menu">
-          <a class="MenuHome" href="fetch.html"> Fetch API </a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link class="Favicon" rel="icon" href="assets/Favicon.png" />
+  <script src="script.js"></script>
+  <title>Web de Practica - Contacto</title>
+</head>
+
+<body>
+  <div class="Container">
+    <div class="ContainerIzquierdo">
+      <div class="Menu"><a class="MenuHome" href="index.html"> Home </a></div>
+      <div class="Menu"><a class="MenuHome" href="bio.html"> Bio </a></div>
+      <div class="Menu">
+        <a class="MenuHome" href="contacto.html"> Contacto </a>
       </div>
-      <div class="ContainerDerecho">
-        <h1 class="Titulo">Foro de Contacto</h1>
-        <form>
-          <input
-            class="ControlForo"
-            type="text"
-            name="nomb"
-            id="nomb"
-            placeholder="Nombre"
-          />
-          <input
-            class="ControlForo"
-            type="text"
-            name="apel"
-            id="apel"
-            placeholder="Apellido"
-          />
-          <input
-            class="ControlForo"
-            type="mail"
-            name="mail"
-            id="mail"
-            placeholder="Email"
-          />
-          <input
-            class="ControlForo"
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="Telefono"
-          />
-          <textarea
-            class="ControlForo"
-            name="mensaje"
-            id="mensaje"
-            cols="30"
-            rows="10"
-            placeholder="Mensaje"
-          ></textarea>
-
-          <button class="btn" id="btn" type="submit">Enviar</button>
-
-          <span class="error" id="error"
-            >Completa los espacios antes de enviar gordito</span
-          >
-          <span class="good" id="good">Mensaje enviado correctamente!</span>
-        </form>
-        <div id="user" class="User">
-          <p id="Username"></p>
-          <p id="Usersurname"></p>
-          <p id="Usermail"></p>
-          <p id="Usertel"></p>
-        </div>
+      <div class="Menu">
+        <a class="MenuHome" href="fetch.html"> Fetch API </a>
       </div>
     </div>
-  </body>
+    <div class="ContainerDerecho">
+      <h1 class="Titulo">Foro de Contacto</h1>
+      <form>
+        <input class="ControlForo" type="text" name="nomb" id="nomb" placeholder="Nombre" />
+        <input class="ControlForo" type="text" name="apel" id="apel" placeholder="Apellido" />
+        <input class="ControlForo" type="mail" name="mail" id="mail" placeholder="Email" />
+        <input class="ControlForo" type="tel" name="tel" id="tel" placeholder="Telefono" />
+        <textarea class="ControlForo" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+        <button class="btn" id="btn" type="submit">Enviar</button>
+
+        <span class="error" id="error">Completa los espacios antes de enviar gordito</span>
+        <span class="good" id="good">Mensaje enviado correctamente!</span>
+      </form>
+      <div id="user" class="User">
+        <p id="Username"></p>
+        <p id="Usersurname"></p>
+        <p id="Usermail"></p>
+        <p id="Usertel"></p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

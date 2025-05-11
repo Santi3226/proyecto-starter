@@ -1,0 +1,77 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$font-stack: 'Arial', sans-serif;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base styles
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+// Header
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Main content
+main {
+  padding: 2rem;
+
+  h1, h2, h3 {
+    color: $primary-color;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+// Footer
+footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 1rem;
+
+  @include flex-center;
+}

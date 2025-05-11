@@ -4,6 +4,7 @@
     font: arial bold;
     color: black;
   }
+
   .Container {
     display: flex;
     height: 200vh;
@@ -53,6 +54,7 @@
     width: 600px;
     height: 341px;
   }
+
   .TextoBio {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,6 +71,7 @@
     margin: 0.5rem;
     margin-bottom: 1rem;
   }
+
   button {
     padding: 20px;
     padding-left: 40px;
@@ -79,6 +82,7 @@
   .error {
     display: none;
   }
+
   .show-error {
     display: block;
     color: black;
@@ -90,6 +94,7 @@
   .good {
     display: none;
   }
+
   .show-good {
     background-color: rgb(15, 194, 15);
     border: solid green;
@@ -104,6 +109,7 @@
     height: 200px;
     width: 200px;
   }
+
   .ApiBtn {
     align-items: center;
   }
@@ -111,9 +117,15 @@
   .User {
     display: none;
   }
+
   .UserShow {
     padding: 0rem;
     background-color: whitesmoke;
     border: solid black 2px;
+  }
+
+  .userimg {
+    height: 200px;
+    width: 200px;
   }
 }
